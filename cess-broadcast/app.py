@@ -766,16 +766,16 @@ st.markdown(f"""
 cards_html = []
 for f_num, (h, m, dia) in H_MAP.items():
     label_fluxo = 'F' + str(f_num) if isinstance(f_num, int) or f_num in ['2.1', '5.1'] else f_num
-    cards_html.append(f"""
-        <div class="horario-card">
-            <div>
-                <div class="fluxo">{label_fluxo}</div>
-                <div class="hora">{h:02d}:{m:02d}</div>
-                <div class="dia">{dia}</div>
-            </div>
-            <div class="mini-line"><span></span></div>
-        </div>
-    """)
+    cards_html.append(
+        f'<div class="horario-card">'
+        f'<div>'
+        f'<div class="fluxo">{label_fluxo}</div>'
+        f'<div class="hora">{h:02d}:{m:02d}</div>'
+        f'<div class="dia">{dia}</div>'
+        f'</div>'
+        f'<div class="mini-line"><span></span></div>'
+        f'</div>'
+    )
 
 st.markdown(f"""
 <div class="schedule-shell">
