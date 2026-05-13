@@ -98,6 +98,7 @@ st.markdown("""
     }
     .broadcast-logo-wrap img {
         width:58px; height:58px; object-fit:contain; display:block;
+        transform: translateY(-13px);
     }
 
     .broadcast-title {
