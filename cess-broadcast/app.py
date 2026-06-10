@@ -9,6 +9,7 @@ import string
 import os
 import sys
 from PIL import Image
+from firebase_client import buscar_aberturas_por_semana
 
 # Garante imports locais quando o Streamlit inicia por outro diretório
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
