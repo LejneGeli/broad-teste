@@ -16,8 +16,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 
-from src.firebase_client import buscar_aberturas_por_semana
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOGO_PATH = os.path.join(BASE_DIR, "logo-broadcast.png")
 FAVICON = Image.open(LOGO_PATH) if os.path.exists(LOGO_PATH) else "📦"
